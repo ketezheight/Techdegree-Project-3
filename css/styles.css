@@ -162,9 +162,15 @@ footer {
     width: 65%;
     max-width: 600px;
   }
+  /* .contact > div {
+    align-content: space-between;
+  } */
+  .contact label {
+    width: 60px;
+  }
   .contact input, select {
   display: inline;
-  width: 70%;
+  width: 300px;
   }
   #zip {
     display: inline;
