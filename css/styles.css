@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Merriweather', serif;
+  line-height: normal;
 }
 
 h2, legend {
@@ -22,9 +23,8 @@ legend {
   margin: 15px 0 10px;
 }
 
-label {
-  display: block;
-  margin: 10px 0;
+div {
+  margin: 5px 0;
 }
 
 label, p {
@@ -75,8 +75,20 @@ h2, h2 + p {
 /* Form 1 */
 
 .contact {
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
   padding-bottom: 30px;
   border-bottom: 3px solid #2E4053;
+}
+
+.contact label {
+  margin: 10px 0;
+}
+
+select {
+  font-size: 14px;
+  color: #99A3A4;
 }
 
 input[type="text"],
@@ -97,16 +109,21 @@ input::placeholder {
   text-align: right;
 }
 
-select {
-  font-size: 14px;
-  color: #99A3A4;
-}
-
 input[id="zip"] {
   width: 50%;
 }
 
+#zip {
+  display: block;
+}
+
 /* Form 2 */
+
+.news {
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+}
 
 button {
   width: 100%;
@@ -118,9 +135,13 @@ button {
   color: white;
 }
 
+.news label{
+  margin: 10px 0;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 10px 0;
+  margin: 10px 10px 10px 0;
 }
 
 
@@ -140,5 +161,13 @@ footer {
   .container {
     width: 65%;
     max-width: 600px;
+  }
+  .contact input, select {
+  display: inline;
+  width: 70%;
+  }
+  #zip {
+    display: inline;
+    width: 25%;
   }
 }
