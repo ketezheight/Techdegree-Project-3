@@ -75,6 +75,7 @@ h2, h2 + p {
 /* Form 1 */
 
 .contact {
+  background: #D4E6F1;
   display: flex;
   flex: wrap;
   flex-direction: column;
