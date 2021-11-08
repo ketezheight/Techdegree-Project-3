@@ -169,11 +169,11 @@ footer {
     justify-content: space-between;
   }
 .contact label {
-  width: 200px;
   padding: 10px 0;
+  margin-right: 10px;
 }
   .contact input, select {
-  display: inline;
+  display: inline-block;
   width: 300px;
   margin: 10px 0;
   }
