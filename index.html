@@ -29,12 +29,12 @@
 
             <div>
               <label for="name">Full Name</label>
-              <input class="highlight" type="text" id="name" name="user_name" placeholder="Required">
+              <input class="highlight" type="text" id="name" name="user_name" placeholder="Required" required>
             </div>
 
             <div>
               <label for="mail">Email Address</label>
-              <input class="highlight" type="email" id="mail" name="user_email" placeholder="Required">
+              <input class="highlight" type="email" id="mail" name="user_email" placeholder="Required" required>
             </div>
 
             <div>
@@ -143,8 +143,8 @@
               <input type="radio" id="plainformat" value="format_plain" name="user_format"><label for="plainformat">Plain text</label>
             </div>
 
-            <label>Other topics you'd like to hear about</label>
-            <textarea class="highlight" id="topics" name="user_topics" rows="5" cols="80"></textarea>
+            <label for="topics">Other topics you'd like to hear about</label>
+            <textarea class="highlight" id="topics" name="user_topics" rows="5" cols="80" placeholder="Comment"></textarea>
           </fieldset>
 
           <button class="btn" type="submit">Sign Up</button>
